@@ -395,7 +395,7 @@ class IC_NMA_Functions
         global NMA_FireUlts
         for k,v in g_NMAChampsToLevel
         {
-            if(k AND k != -1 AND NMA_FireUlts)
+            if(k AND k != -1 AND NMA_FireUlts AND champID != 87)
             {
                 ultButton := g_SF.GetUltimateButtonByChampID(k)
                 this.DirectedInputNoCritical(,, ultButton)
